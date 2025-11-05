@@ -7,6 +7,12 @@ body {
 	--baseColor: rgb(255, 111, 0);
 	--fgLightness: 25%;
 	--bgLightness: 98%;
+	--fontFamilyEm: "Martina Plantijn";
+	--fontWeightEm: 300;
+	--hrOpacity: 25%;
+	--hrMargin: 2rem;
+	--hrMaxWidth: 2rem;
+
 	color: hsl(from var(--baseColor) h 40% var(--fgLightness));
 	background: hsl(from currentColor h s var(--bgLightness));
 	max-width: 35rem;
@@ -54,7 +60,7 @@ blockquote {
 	background: transparent;
 	border-left: 0.25rem solid hsl(from currentColor h s l / 75%);
 	border-radius: 0;
-	padding: 0 1em;
+	padding: 0 0 0 1em;
 
 	&,
 	p {
@@ -67,16 +73,17 @@ blockquote,
 blockquote p,
 i,
 em {
-	font-family: "Martina Plantijn" !important;
-	font-weight: 300;
+	font-family: var(--fontFamilyEm) !important;
+	font-weight: var(--fontWeightEm);
 }
 
 hr {
-	background: hsl(from currentColor h s l / 10%);
-	margin: 2rem auto;
+	background: currentColor;
+	opacity: var(--hrOpacity);
+	margin: var(--hrMargin) auto;
 	width: 100%;
-	height: 0.25rem;
-	max-width: 2rem;
+	height: var(--hrHeight);
+	max-width: var(--hrMaxWidth);
 	border: none;
 }
 
