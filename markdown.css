@@ -11,6 +11,7 @@ body {
 	--fontWeightEm: 300;
 	--hrOpacity: 25%;
 	--hrMargin: 2rem;
+	--hrHeight: 2rem;
 	--hrMaxWidth: 2rem;
 
 	color: hsl(from var(--baseColor) h 40% var(--fgLightness));
