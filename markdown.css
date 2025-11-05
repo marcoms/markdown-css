@@ -1,0 +1,88 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	--baseColor: rgb(255, 111, 0);
+	--fgLightness: 25%;
+	--bgLightness: 98%;
+	color: hsl(from var(--baseColor) h 40% var(--fgLightness));
+	background: hsl(from currentColor h s var(--bgLightness));
+	max-width: 35rem;
+	margin: 0 auto;
+	padding: min(6vw, 3rem);
+
+	@media (prefers-color-scheme: dark) {
+		--fgLightness: 85%;
+		--bgLightness: 0%;
+	}
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 500;
+	border: none;
+	border-color: none;
+	padding: 0;
+	margin: 0 0 1.25em;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+}
+
+h3 {
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+p {
+	font-family: "Copernicus", serif;
+}
+
+p,
+blockquote {
+	margin: 1.5rem 0;
+}
+
+blockquote {
+	background: transparent;
+	border-left: 0.25rem solid hsl(from currentColor h s l / 75%);
+	border-radius: 0;
+	padding: 0 1em;
+
+	&,
+	p {
+		font-size: 1.2rem;
+		font-style: italic;
+	}
+}
+
+blockquote,
+blockquote p,
+i,
+em {
+	font-family: "Martina Plantijn" !important;
+	font-weight: 300;
+}
+
+hr {
+	background: hsl(from currentColor h s l / 10%);
+	margin: 2rem auto;
+	width: 100%;
+	height: 0.25rem;
+	max-width: 2rem;
+	border: none;
+}
+
+.code-line::before {
+	display: none !important;
+}
+
