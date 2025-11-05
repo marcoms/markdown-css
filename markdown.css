@@ -13,12 +13,15 @@ body {
 	--hrMargin: 2rem;
 	--hrHeight: 0.25rem;
 	--hrMaxWidth: 2rem;
+	--paddingY: min(6vw, 3rem);
+	--paddingBottom: 50vw;
 
 	color: hsl(from var(--baseColor) h 40% var(--fgLightness));
 	background: hsl(from currentColor h s var(--bgLightness));
 	max-width: 35rem;
 	margin: 0 auto;
-	padding: min(6vw, 3rem);
+	padding: var(--paddingY);
+	padding-bottom: var(--paddingBottom, var(--paddingY));
 	font-family: "Copernicus", serif;
 	font-variant-numeric: lining-nums;
 
