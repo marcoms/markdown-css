@@ -79,13 +79,16 @@ em {
 }
 
 hr {
-	background: currentColor;
-	opacity: var(--hrOpacity);
 	margin: var(--hrMargin) auto;
 	width: 100%;
-	height: var(--hrHeight);
+	opacity: var(--hrOpacity);
+	border-inline: none;
 	max-width: var(--hrMaxWidth);
 	border: none;
+
+	/* HACK: Avoid browsers hiding hr when printing */
+	height: 0;
+	border: calc(var(--hrHeight) / 2) solid currentColor;
 }
 
 .code-line::before {
