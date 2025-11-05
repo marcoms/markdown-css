@@ -14,7 +14,7 @@ body {
 	--hrHeight: 0.25rem;
 	--hrMaxWidth: 2rem;
 	--paddingY: min(6vw, 3rem);
-	--paddingBottom: 50vw;
+	--paddingBottom: 50vh;
 
 	color: hsl(from var(--baseColor) h 40% var(--fgLightness));
 	background: hsl(from currentColor h s var(--bgLightness));
