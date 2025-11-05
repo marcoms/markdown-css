@@ -70,6 +70,15 @@ blockquote {
 	}
 }
 
+ul,
+ol {
+	list-style-type: square;
+}
+
+li {
+	padding-inline-start: 0.25em;
+}
+
 blockquote,
 blockquote p,
 i,
