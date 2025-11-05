@@ -9,9 +9,9 @@ body {
 	--bgLightness: 98%;
 	--fontFamilyEm: "Martina Plantijn";
 	--fontWeightEm: 300;
-	--hrOpacity: 25%;
+	--hrOpacity: 20%;
 	--hrMargin: 2rem;
-	--hrHeight: 2rem;
+	--hrHeight: 0.25rem;
 	--hrMaxWidth: 2rem;
 
 	color: hsl(from var(--baseColor) h 40% var(--fgLightness));
