@@ -12,6 +12,8 @@ body {
 	max-width: 35rem;
 	margin: 0 auto;
 	padding: min(6vw, 3rem);
+	font-family: "Copernicus", serif;
+	font-variant-numeric: lining-nums;
 
 	@media (prefers-color-scheme: dark) {
 		--fgLightness: 85%;
@@ -41,10 +43,6 @@ h3 {
 	font-size: 1.1rem;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-}
-
-p {
-	font-family: "Copernicus", serif;
 }
 
 p,
@@ -85,4 +83,3 @@ hr {
 .code-line::before {
 	display: none !important;
 }
-
